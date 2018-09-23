@@ -58,10 +58,10 @@ if __name__ == "__main__":
     huffman_tree.compress(INPUT_FILE, ENCODE_FILE)
     print("compress done.\n")
 
-    # TODO: encrypt compressed file
+    # encrypt compressed file
     encrypt(ENCODE_FILE, ENCRYPT_FILE, KEY)
 
-    # TODO: decrypt bin file
+    # decrypt bin file
     decrypt(ENCRYPT_FILE, DECRYPT_FILE, KEY)
 
     # decompress file
