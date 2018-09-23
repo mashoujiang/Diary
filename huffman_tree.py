@@ -128,7 +128,7 @@ class HuffTree(object):
         """
         if root.isleaf():
             char_freq[root.get_value()] = code
-            print(("it = %c  and  freq = %d  code = %s") % (chr(root.get_value()), root.get_weight(), code))
+            # print(("it = %c  and  freq = %d  code = %s") % (chr(root.get_value()), root.get_weight(), code))
             return None
         else:
             self.traverse_huffman_tree(root.get_left(), code + '0', char_freq)
